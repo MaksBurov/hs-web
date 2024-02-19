@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: calc(2em + 2px);
+  border: 1px solid var(--color-main);
+  border-radius: 1em;
+}
+
+.btnIcon {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.wrapperInput {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btnAdd {
+  font-size: 1.5rem;
+}
+
+.inutCount {
+  width: 3em;
+  height: 100%;
+  text-align: center;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+}

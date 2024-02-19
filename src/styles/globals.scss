@@ -1,0 +1,100 @@
+:root {
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+button,
+input,
+textarea {
+  border: unset;
+  background-color: unset;
+}
+
+/*a,
+input,
+button {
+    appearance: none;
+}*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: calc(1em + 0.5rem);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main {
+  position: relative;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}

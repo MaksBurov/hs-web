@@ -1,0 +1,19 @@
+.productsList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0 -15px;
+}
+
+.productItem {
+  width: 100%;
+  margin: 15px;
+
+  @media (min-width: 576px) {
+    width: calc(100% / 2 - 30px);
+  }
+  @media (min-width: 1024px) {
+    width: calc(100% / 3 - 30px);
+  }
+}

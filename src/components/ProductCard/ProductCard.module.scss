@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  padding: 1em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-color: #f2f3f3;
+    transform: skewY(4deg);
+    border-radius: 1rem;
+  }
+
+  // &:focus {
+  //     box-shadow: 0 0 0 2px #fff, 0 0 0 4px green;
+  // }
+}
+
+.image {
+  position: relative;
+  width: 80%;
+  padding-top: 80%;
+  margin: 0 auto;
+  transition: transform 0.3s;
+
+  .card:hover & {
+    transform: translateY(-10%) scale(1.05);
+  }
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  margin-bottom: 0.25em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.price {
+  margin-top: 0.5em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  // text-align: end;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.25em;
+  height: 2.25em;
+
+  border-radius: 50%;
+  background-color: #6db935;
+
+  color: #fff;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.imageIconButton {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
