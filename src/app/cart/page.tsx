@@ -27,6 +27,7 @@ async function getProductsByIds(data: any) {
   const res = await fetch("http://147.45.109.170:8080/products/by-ids", {
     method: "POST",
     headers: {
+      "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
