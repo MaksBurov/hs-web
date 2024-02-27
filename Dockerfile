@@ -1,7 +1,7 @@
 FROM node:20
 
 # создание директории приложения
-WORKDIR /app
+WORKDIR /hs-web
 
 # установка зависимостей
 # символ астериск ("*") используется для того чтобы по возможности
@@ -15,6 +15,8 @@ RUN npm install
 # копируем исходный код
 COPY . .
 
-EXPOSE 3030
+RUN npm run build
 
-CMD [ "npm", "run", "dev" ]
+EXPOSE 3000
+
+CMD [ "npm", "run", "start" ]
